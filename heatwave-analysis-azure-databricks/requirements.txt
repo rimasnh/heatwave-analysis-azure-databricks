@@ -1,0 +1,9 @@
+pyspark
+boto3
+botocore
+netCDF4
+h5netcdf
+xarray
+pandas
+matplotlib
+numpy
