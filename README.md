@@ -117,8 +117,4 @@ This project demonstrates:
 3. Mount or upload dataset to DBFS
 4. Run all cells
 
-### Option 2: Local (Limited)
-
-Install dependencies:
-
 
