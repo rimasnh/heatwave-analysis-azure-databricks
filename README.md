@@ -20,19 +20,27 @@ The workflow demonstrates how to:
 
 This project showcases cloud-based big data processing and climate analytics using PySpark.
 
+```mermaid
+flowchart LR
+    A["NASA NEX-GDDP Dataset (AWS S3 - NetCDF)"] --> B["Azure Databricks (DBFS Storage)"]
+    B --> C["NetCDF Processing (xarray + Pandas)"]
+    C --> D["PySpark DataFrame"]
+    D --> E["Parquet Storage"]
+    E --> F["Heatwave Analysis (Aggregation + Window Functions)"]
+    F --> G["Visualization (Matplotlib)"]
+```
 ---
 
 ## 🛠 Tech Stack
 
-- Azure Databricks
-- Apache Spark (PySpark)
-- Python
-- AWS S3 (Public Climate Dataset)
-- NetCDF4
-- Xarray
-- Pandas
-- Matplotlib
-- Parquet
+- ☁️ Azure Databricks (Cloud Analytics Platform)
+- ⚡ Apache Spark (Distributed Processing Engine)
+- 🗂 Parquet (Columnar Data Storage Optimization)
+- 🌍 AWS S3 (Public Climate Data Source)
+- 🔬 NetCDF & Xarray (Scientific Data Processing)
+- 📈 Spark SQL & Window Functions (Advanced Analytics)
+- 🐍 Python Ecosystem (Pandas, Matplotlib)
+
 
 ---
 
@@ -92,20 +100,6 @@ Although the dataset represents projected climate data, the analysis simulates h
 - Daily temperature trend for Antarctica
 - Continent-level temperature comparison
 - Hottest and coldest day detection per continent
-
----
-
-## 📈 Why This Project Matters
-
-This project demonstrates:
-
-- Distributed computing with Spark
-- Handling scientific NetCDF data
-- Cloud-based big data pipelines
-- Climate data analytics
-- Feature engineering using geospatial logic
-- Performance optimization using Parquet
-
 ---
 
 ## 🚀 How to Run
